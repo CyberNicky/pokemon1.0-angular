@@ -6,10 +6,28 @@
     flex-direction: column;
     background-color: #232323;
     border-radius: 10px;
+    
     h3{
         color: white;
         
     }
+}
+.search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-card{
+    background-color: orange;
+    padding: 40px;
+    border-radius: 20px;
+
+}
+input{
+    border-radius: 5px; 
+    color:#C0C0C0;
+    margin-bottom: 15px;
 }
 
 .card-title{
@@ -47,4 +65,11 @@
     align-items: center;
     justify-content: center;
     
+}
+
+.container{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
