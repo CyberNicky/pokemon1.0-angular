@@ -1,15 +1,29 @@
-<div class="card">
-  <input type="text" (input)="getPokemon($any($event.target).value)">
+<div class="container">
+  <div class="container-card">
+    <div class="search-container">
 
-  <div class="card-title">
-    <h3> {{ pokemon.name }} </h3>
+   
+    <h1>Search for a Pokemon </h1>
+    <input type="text" (input)="getPokemon($any($event.target).value)" />
   </div>
-  <div class="card-body">
-    <img [src]="pokemon.sprites.front_default" height="150" alt="pokemon" srcset="">
-  </div>
-  <div class="card-stats">
-    <span  class="card-stats-type" *ngFor="let type of pokemon.types">
-        {{ type.type.name }}
-    </span>
+
+    <div class="card">
+      <div class="card-title">
+        <h3>{{ pokemon.name }}</h3>
+      </div>
+      <div class="card-body">
+        <img
+          [src]="pokemon.sprites.front_default"
+          height="150"
+          alt="pokemon"
+          srcset=""
+        />
+      </div>
+      <div class="card-stats">
+        <span class="card-stats-type" *ngFor="let type of pokemon.types">
+          {{ type.type.name }}
+        </span>
+      </div>
+    </div>
   </div>
 </div>
